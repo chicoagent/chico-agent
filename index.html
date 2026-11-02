@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chico Agent — Assistente Pessoal</title>
+<meta name="description" content="Chico Agent é um assistente pessoal de uso privado que acessa apenas as contas Google do próprio proprietário.">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --text:#e8eaf0; --muted:#9aa3b2;
+    --accent:#7c9cff; --border:#252a34;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --panel:#ffffff; --text:#14171d; --muted:#5b6472;
+           --accent:#2952cc; --border:#e3e6ec; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:64px 24px 96px}
+  header{display:flex; align-items:center; gap:14px; margin-bottom:48px}
+  .mark{
+    width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+    background:linear-gradient(135deg,var(--accent),#9b6cff);
+    display:grid;place-items:center;font-weight:700;color:#fff;font-size:18px;letter-spacing:-.5px;
+  }
+  h1{font-size:28px; line-height:1.2; margin:0; letter-spacing:-.4px}
+  .sub{color:var(--muted); font-size:14px; margin-top:2px}
+  h2{font-size:17px; margin:40px 0 10px; letter-spacing:-.2px}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:7px}
+  .card{
+    background:var(--panel); border:1px solid var(--border);
+    border-radius:14px; padding:22px 24px; margin:24px 0;
+  }
+  .tag{
+    display:inline-block; font-size:12px; font-weight:600; letter-spacing:.3px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:10px;
+  }
+  code{
+    background:var(--panel); border:1px solid var(--border); border-radius:6px;
+    padding:1px 6px; font-size:14px;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{
+    margin-top:56px; padding-top:24px; border-top:1px solid var(--border);
+    color:var(--muted); font-size:14px;
+  }
+  .muted{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">CA</div>
+    <div>
+      <h1>Chico Agent</h1>
+      <div class="sub">Assistente pessoal de uso privado</div>
+    </div>
+  </header>
+
+  <p>
+    O <strong>Chico Agent</strong> é um assistente pessoal automatizado, operado por
+    <strong>uma única pessoa</strong> — seu próprio proprietário. Ele não é um serviço
+    público: não há cadastro, não há outros usuários e ninguém além do proprietário
+    pode utilizá-lo.
+  </p>
+
+  <div class="card">
+    <span class="tag">O que ele faz</span>
+    <p style="margin-bottom:0">
+      Executa tarefas que o proprietário solicita no dia a dia — como organizar
+      compromissos na agenda, localizar informações em e-mails, criar lembretes e
+      preparar documentos. Tudo a pedido explícito dele.
+    </p>
+  </div>
+
+  <h2>Quais dados ele acessa</h2>
+  <p>
+    O Chico Agent acessa <strong>exclusivamente as contas Google do próprio
+    proprietário</strong>, e somente os escopos autorizados por ele:
+  </p>
+  <ul>
+    <li><strong>Gmail</strong> — leitura, envio e organização de mensagens</li>
+    <li><strong>Google Calendar</strong> — leitura e criação de eventos</li>
+    <li><strong>Google Drive</strong> — leitura e organização de arquivos</li>
+    <li><strong>Contatos, Sheets e Docs</strong> — apoio às tarefas acima</li>
+  </ul>
+  <p class="muted">
+    Nenhuma conta de terceiros é acessada. O aplicativo não coleta dados de
+    visitantes deste site.
+  </p>
+
+  <h2>Como os dados são tratados</h2>
+  <p>
+    Os dados permanecem no computador do próprio proprietário. Não são enviados a
+    servidores de terceiros, não são vendidos, não são usados para publicidade e não
+    alimentam modelos de terceiros. O token de acesso é armazenado localmente, com
+    permissão restrita, e pode ser revogado a qualquer momento.
+  </p>
+  <p>
+    Detalhes completos na <a href="privacy.html">Política de Privacidade</a>.
+  </p>
+
+  <h2>Contato</h2>
+  <p>
+    Responsável: René Amato Gerin<br>
+    E-mail: <a href="mailto:chicoagent.ai@gmail.com">chicoagent.ai@gmail.com</a>
+  </p>
+
+  <footer>
+    Chico Agent · aplicação de uso pessoal · <a href="privacy.html">Política de Privacidade</a>
+  </footer>
+
+</div>
+</body>
+</html>

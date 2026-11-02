@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Chico Agent</title>
+<meta name="description" content="Política de Privacidade do Chico Agent, assistente pessoal de uso privado.">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --text:#e8eaf0; --muted:#9aa3b2;
+    --accent:#7c9cff; --border:#252a34;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --panel:#ffffff; --text:#14171d; --muted:#5b6472;
+           --accent:#2952cc; --border:#e3e6ec; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 24px 96px}
+  .top{display:flex; align-items:center; gap:12px; margin-bottom:34px}
+  .mark{
+    width:38px;height:38px;border-radius:10px;flex:0 0 auto;
+    background:linear-gradient(135deg,var(--accent),#9b6cff);
+    display:grid;place-items:center;font-weight:700;color:#fff;font-size:15px;
+  }
+  .brand{font-weight:600; font-size:15px}
+  .brand span{color:var(--muted); font-weight:400}
+  h1{font-size:28px; line-height:1.2; margin:0 0 8px; letter-spacing:-.4px}
+  .updated{color:var(--muted); font-size:14px; margin-bottom:36px}
+  h2{
+    font-size:17px; margin:38px 0 10px; letter-spacing:-.2px;
+    padding-top:20px; border-top:1px solid var(--border);
+  }
+  h2:first-of-type{border-top:0; padding-top:0}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:8px}
+  .card{
+    background:var(--panel); border:1px solid var(--border);
+    border-radius:14px; padding:20px 22px; margin:20px 0;
+  }
+  .card p:last-child{margin-bottom:0}
+  strong{font-weight:600}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{
+    margin-top:52px; padding-top:24px; border-top:1px solid var(--border);
+    color:var(--muted); font-size:14px;
+  }
+  .en{font-size:15px; color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="mark">CA</div>
+    <div class="brand">Chico Agent <span>· Política de Privacidade</span></div>
+  </div>
+
+  <h1>Política de Privacidade</h1>
+  <div class="updated">Última atualização: 2 de novembro de 2026</div>
+
+  <p>
+    Esta política descreve como o <strong>Chico Agent</strong> ("o aplicativo") trata
+    informações obtidas de serviços do Google. O aplicativo é de
+    <strong>uso estritamente pessoal e privado</strong>: possui um único usuário, que é
+    seu próprio proprietário. Não é oferecido ao público, não permite cadastro e não
+    atende terceiros.
+  </p>
+
+  <h2>1. Quem é o responsável</h2>
+  <p>
+    René Amato Gerin — contato:
+    <a href="mailto:chicoagent.ai@gmail.com">chicoagent.ai@gmail.com</a>.
+  </p>
+
+  <h2>2. Quais dados do Google são acessados</h2>
+  <p>
+    O aplicativo acessa apenas as contas Google do próprio proprietário, e somente
+    dentro dos escopos que ele autoriza expressamente:
+  </p>
+  <ul>
+    <li><strong>Gmail</strong> (<code>gmail.readonly</code>, <code>gmail.send</code>,
+        <code>gmail.modify</code>) — ler, enviar e organizar mensagens;</li>
+    <li><strong>Google Calendar</strong> — ler e criar eventos na agenda;</li>
+    <li><strong>Google Drive</strong> — localizar e organizar arquivos;</li>
+    <li><strong>Google Contacts</strong> (<code>contacts.readonly</code>) — consultar
+        contatos ao executar tarefas solicitadas;</li>
+    <li><strong>Google Sheets e Docs</strong> — ler e escrever planilhas e documentos
+        quando a tarefa exigir.</li>
+  </ul>
+  <p>
+    O aplicativo <strong>não</strong> acessa dados de outras pessoas, não coleta
+    informações de visitantes deste site e não utiliza cookies, rastreadores ou
+    ferramentas de análise.
+  </p>
+
+  <h2>3. Para que os dados são usados</h2>
+  <p>
+    Exclusivamente para executar as tarefas que o proprietário solicita, uma a uma —
+    por exemplo: resumir compromissos do dia, criar um evento na agenda, encontrar um
+    e-mail, emitir um lembrete de conta a pagar. Não há qualquer uso secundário.
+  </p>
+  <p>Os dados <strong>não</strong> são usados para:</p>
+  <ul>
+    <li>publicidade ou marketing de qualquer tipo;</li>
+    <li>treinamento de modelos de linguagem ou de aprendizado de máquina;</li>
+    <li>análise de perfil, pontuação ou decisões automatizadas sobre pessoas;</li>
+    <li>venda, aluguel ou licenciamento a terceiros.</li>
+  </ul>
+
+  <h2>4. Onde os dados ficam armazenados</h2>
+  <p>
+    O aplicativo roda no computador do próprio proprietário. Os dados obtidos do
+    Google — mensagens, eventos e arquivos — são processados e permanecem
+    <strong>localmente</strong>, na mesma máquina, e não são enviados a servidores
+    próprios ou de terceiros mantidos pelo aplicativo.
+  </p>
+  <p>
+    O token de autorização OAuth é gravado em arquivo local com permissão restrita
+    (leitura apenas pelo proprietário), usado unicamente para autenticar as chamadas à
+    API do Google e renovado automaticamente enquanto a autorização estiver válida.
+  </p>
+
+  <h2>5. Compartilhamento com terceiros</h2>
+  <p>
+    <strong>Nenhum dado é compartilhado, vendido, alugado ou transferido a
+    terceiros.</strong> Não há integrações de anúncios, corretores de dados ou
+    serviços de análise. O aplicativo não transfere informações obtidas do Google
+    para plataformas de anúncio, redes sociais ou qualquer outro destinatário.
+  </p>
+
+  <h2>6. Retenção e exclusão</h2>
+  <p>
+    Os dados ficam retidos apenas enquanto forem úteis à tarefa solicitada, no próprio
+    computador do proprietário. O proprietário pode, a qualquer momento:
+  </p>
+  <ul>
+    <li><strong>revogar o acesso</strong> do aplicativo em
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>;</li>
+    <li><strong>apagar o token</strong> local, o que encerra imediatamente a capacidade
+        do aplicativo de acessar as contas Google;</li>
+    <li><strong>excluir</strong> quaisquer dados locais armazenados pelo aplicativo.</li>
+  </ul>
+  <p>
+    Como o único titular dos dados é o próprio proprietário, a exclusão é feita por
+    ele diretamente, sem necessidade de solicitação a terceiros.
+  </p>
+
+  <h2>7. Segurança</h2>
+  <p>
+    O acesso se dá exclusivamente por OAuth 2.0 do Google, com escopos mínimos
+    necessários. As credenciais não são compartilhadas, não trafegam em texto aberto e
+    ficam em arquivo local de permissão restrita. O aplicativo não mantém servidor
+    público que armazene dados de usuários.
+  </p>
+
+  <h2>8. Política de Dados do Usuário dos Serviços de API do Google</h2>
+  <div class="card">
+    <p>
+      O uso e a transferência, pelo Chico Agent, de informações recebidas das APIs do
+      Google observam a
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>,
+      incluindo os requisitos de <strong>Uso Limitado (Limited Use)</strong>.
+    </p>
+    <p class="en">
+      <em>Chico Agent's use and transfer to any other app of information received from
+      Google APIs will adhere to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</em>
+    </p>
+  </div>
+
+  <h2>9. Crianças</h2>
+  <p>
+    O aplicativo não é destinado a menores de idade e não é disponibilizado a nenhum
+    usuário além do proprietário.
+  </p>
+
+  <h2>10. Alterações nesta política</h2>
+  <p>
+    Eventuais mudanças serão publicadas nesta mesma página, com atualização da data no
+    topo. Como o aplicativo tem um único usuário, o proprietário é diretamente
+    informado de qualquer alteração.
+  </p>
+
+  <h2>11. Contato</h2>
+  <p>
+    Dúvidas sobre esta política ou sobre o tratamento de dados:<br>
+    <a href="mailto:chicoagent.ai@gmail.com">chicoagent.ai@gmail.com</a>
+  </p>
+
+  <footer>
+    Chico Agent · aplicação de uso pessoal · <a href="index.html">Página inicial</a>
+  </footer>
+
+</div>
+</body>
+</html>
